@@ -1,0 +1,1594 @@
+Command: /home/lev/.espressif/python_env/idf6.0_py3.14_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/lev/Documents/esp32/firstProject/build/firstProject.elf /home/lev/Documents/esp32/firstProject/build/bootloader/bootloader.elf -m '/home/lev/.espressif/python_env/idf6.0_py3.14_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;33mW (323) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (323) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (403) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[1;31mE (23193) i2c.master: I2C software timeout[0m
+[0;33mW (23193) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (23233) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (23233) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (23233) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;33mW (323) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (323) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (403) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (1283) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1323) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1323) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1403) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1583) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1623) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1623) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1703) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1743) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1783) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1783) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1863) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1863) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2023) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2023) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2023) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2073) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2113) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2113) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2193) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2193) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2353) i2cdev: [0x68 at 1] Retrying operation...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (6453) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6453) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (6453) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (6503) i2cdev: [0x68 at 1] Retrying operation...[0m
+[1;31mE (9663) i2c.master: I2C software timeout[0m
+[0;33mW (9663) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9703) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (9703) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9703) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (1403) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1443) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1443) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1443) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2443) i2c.master: I2C software timeout[0m
+[0;33mW (2443) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2483) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2483) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (6453) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6453) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (6593) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (6633) i2cdev: [0x68 at 1] Retrying operation...[0m
+[1;31mE (8663) i2c.master: I2C software timeout[0m
+[0;33mW (8663) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8703) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8703) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8703) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (10013) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10053) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10053) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10133) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10133) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10293) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10293) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (10293) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (10343) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10383) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10383) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10463) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10463) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10623) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10623) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (10623) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (10673) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (403) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (453) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (453) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (533) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (533) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (693) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (693) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (693) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (703) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (753) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (753) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (833) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (833) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (993) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (993) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (993) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (1043) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1083) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1083) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1163) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1163) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1323) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1323) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (1323) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (1373) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1413) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1413) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1493) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1493) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1653) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1653) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (1653) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (1703) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1743) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1743) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1823) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1823) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1983) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1983) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (1983) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2033) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2073) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2073) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2153) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2153) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2313) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2313) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2313) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2363) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2403) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2403) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2483) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2483) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2643) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2643) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2643) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2693) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2733) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2733) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2813) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2813) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2973) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2973) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2973) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (3023) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3063) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3063) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3143) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3143) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3303) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3303) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (3303) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (3353) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3393) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3393) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3473) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3473) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3633) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (5843) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5843) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (8773) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8773) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (8773) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (8773) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8823) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8823) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8823) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (8823) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8833) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (8833) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (8843) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8933) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8933) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8933) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (8933) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8943) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (8943) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (8953) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9123) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (9123) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9123) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (9123) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (9133) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (9193) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9193) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (9193) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (9193) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9243) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (9243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9243) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (9243) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9333) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (9693) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9733) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10133) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10173) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10303) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (10303) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (10303) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (10313) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (10323) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (10323) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10373) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10373) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (10373) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11053) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11053) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11103) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11143) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11143) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11143) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11413) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11413) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11443) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11483) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11483) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11493) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11493) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (11503) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11593) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11593) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11593) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11603) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11603) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11613) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (11613) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11783) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11783) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11783) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11793) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11793) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11793) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (11803) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11853) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11853) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11853) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11873) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11873) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11873) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (11873) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11963) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11963) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11963) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (11973) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11973) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11973) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (11983) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (12153) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (12153) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12153) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (12173) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12173) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (12173) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (12173) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (12183) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (12243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12243) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (12253) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12253) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (12253) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (12253) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (12303) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (12303) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12303) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (12313) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12313) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (12313) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (12323) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (12373) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (12373) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12373) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (12393) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12393) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (12393) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (12393) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (12483) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (12483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12483) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (12873) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (12873) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (12873) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (12873) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (13043) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (13043) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (13043) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (13313) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (13313) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (13313) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (13313) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (13323) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (13383) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (13383) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (14383) i2c.master: I2C software timeout[0m
+[0;33mW (14383) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (14423) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (14423) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (14423) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (15423) i2c.master: I2C software timeout[0m
+[0;33mW (15423) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (15503) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (15503) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (15503) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (15843) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (15843) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (15843) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (15843) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (16013) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (16013) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (16013) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17013) i2c.master: I2C software timeout[0m
+[0;33mW (17013) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (17013) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (17063) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17063) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17613) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17613) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17613) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (17613) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17663) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17663) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17663) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17893) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17893) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17893) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (17893) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17943) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17943) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17943) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17943) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17953) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17953) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (17963) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18053) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18053) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18053) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18053) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18063) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18063) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18073) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18243) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18243) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;33mW (323) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (323) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (403) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (2923) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2923) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2983) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3023) i2cdev: [0x68 at 1] Retrying operation...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (633) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (633) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (653) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (693) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2443) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2483) i2cdev: [0x68 at 1] Retrying operation...[0m
+[1;31mE (3493) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;33mW (3493) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (3493) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (3493) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (3543) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (3543) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (3543) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4443) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4443) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4443) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4453) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4503) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4503) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4503) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (5003) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5003) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (5003) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (5003) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (5053) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (5053) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5053) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (8273) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;33mW (8273) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8273) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (8273) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8323) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8323) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8323) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (10393) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10443) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (10443) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (10523) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (13363) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (13403) i2cdev: [0x68 at 1] Retrying operation...[0m
+[1;31mE (16033) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;33mW (16033) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (16033) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (16033) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (16083) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (16083) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (16083) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[0;33mW (1293) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1293) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1293) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1343) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1343) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1343) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1343) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1353) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1353) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1363) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1453) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1453) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1453) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1453) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1463) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1463) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1473) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1643) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1643) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1643) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1643) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1653) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1653) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1663) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (1673) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (1723) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1723) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1723) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1733) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1743) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1743) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1793) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1793) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1793) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1793) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1803) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1803) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1813) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1903) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1903) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1903) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1903) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1913) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1913) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1923) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2093) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2093) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2093) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2093) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2103) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2103) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2113) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2123) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2173) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2173) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2173) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2183) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2193) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2193) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2243) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2243) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2253) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2253) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2263) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2353) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2353) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2353) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2353) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2363) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2363) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2373) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2543) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2543) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2543) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2543) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2553) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2553) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2563) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2573) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2623) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2623) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2623) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2633) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2643) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2643) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2693) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2693) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2693) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2693) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2783) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2783) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2783) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2783) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2793) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2793) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2803) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2973) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2973) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2973) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (3983) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;33mW (3983) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (3983) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (3983) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (3993) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (4053) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4053) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4193) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4193) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4193) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4203) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4203) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4213) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4263) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4263) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4263) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4263) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4273) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4273) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4283) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4373) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4373) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4373) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4373) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4383) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4383) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4393) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4443) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4443) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4443) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4493) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4493) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4493) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4493) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4543) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4543) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4543) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (5153) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5153) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (5163) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (5163) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (5213) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (5213) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5213) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (5213) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5223) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (5223) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (5233) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (5323) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (5323) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5323) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (6163) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6163) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (6163) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (6173) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (6223) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (6223) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6223) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (6223) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6233) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (6233) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (6243) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (6333) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (6333) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (6333) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (8043) i2c.master: I2C software timeout[0m
+[0;33mW (8043) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8083) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8083) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8083) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (11383) i2c.master: I2C software timeout[0m
+[0;33mW (11383) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (11423) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (11423) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (11423) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (15253) i2c.master: I2C software timeout[0m
+[0;33mW (15253) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (15293) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (15293) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (15293) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26253) i2c.master: I2C software timeout[0m
+[0;33mW (26253) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (26293) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (26293) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26293) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26293) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26303) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26303) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26313) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (26403) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (26403) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26403) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26403) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26413) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26413) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26423) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (26593) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (26593) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26593) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26593) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26603) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26603) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26613) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (26623) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (26673) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26673) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26683) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26683) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26693) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26693) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (26743) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (26743) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26743) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26743) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26753) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26753) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26763) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (26853) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (26853) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26853) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (26853) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (26863) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (26863) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (26873) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (27043) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (27043) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (27043) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (28043) i2c.master: I2C software timeout[0m
+[0;33mW (28043) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (28043) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (28093) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (28093) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (29093) i2c.master: I2C software timeout[0m
+[0;33mW (29093) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (29133) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (29133) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (29133) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30133) i2c.master: I2C software timeout[0m
+[0;33mW (30133) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (30213) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (30213) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30213) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30213) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30223) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30223) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30233) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (30403) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (30403) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30403) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30403) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30413) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30413) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30423) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (30433) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (30483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30483) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30483) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30493) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30503) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30503) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (30553) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (30553) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30553) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30553) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30563) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30563) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30573) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (30663) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (30663) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30663) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30663) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30673) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30673) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30683) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (30853) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (30853) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30853) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (30853) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30863) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (30863) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (30873) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (30883) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (30933) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (30933) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  8 2026 14:33:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b6f0h ( 46832) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b718 vaddr=3ffb0000 size=02ee8h ( 12008) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e608 vaddr=40080000 size=01a10h (  6672) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11c6ch ( 72812) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=00031c94 vaddr=40081a10 size=0a0c4h ( 41156) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003bd60 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     firstProject[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Jun  8 2026 14:33:45[0m
+[0;32mI (202) app_init: ELF file SHA256:  a97dec3dd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB3DE0 len 0002C220 (176 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008BAD4 len 0001452C (81 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) SSD1306: New i2c driver is used[0m
+[0;32mI (323) SSD1306: OLED configured successfully[0m
+[0;32mI (393) i2cdev: [Port 1] First initialization. Configuring bus with SDA=18, SCL=19 (Pullups SCL:0 SDA:0)[0m
+[0;32mI (393) i2cdev: [Port 1] Successfully installed I2C master bus (Handle: 0x3ffb609c).[0m
+[0;32mI (393) i2cdev: [0x68 at 1] Device added successfully (Device Handle: 0x3ffb6598, Speed: 1000000 Hz).[0m
+[1;31mE (1403) i2c.master: I2C software timeout[0m
+[0;33mW (1403) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1443) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1443) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1443) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1443) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1453) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1453) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1463) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1553) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1553) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1553) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1553) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1563) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1563) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1573) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1743) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1743) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1743) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1743) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1753) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1753) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1763) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (1773) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (1783) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1783) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1793) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1803) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1803) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1813) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1863) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1863) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1863) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1863) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1873) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1873) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1883) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (1973) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (1973) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1973) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (1973) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (1983) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (1983) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (1993) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2163) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2163) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2163) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2163) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2173) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2173) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2183) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2193) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2243) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2243) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2253) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2263) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2263) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2313) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2313) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2313) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2313) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2323) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2323) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2333) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2423) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2423) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2423) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2423) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2433) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2433) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2443) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2613) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2613) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2613) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2613) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2623) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2623) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2633) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (2643) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (2693) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2693) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2693) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2703) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2713) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2713) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2763) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2763) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2763) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (2763) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2773) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (2773) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (2783) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (2873) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (2873) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (2873) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (3873) i2c.master: I2C software timeout[0m
+[0;33mW (3873) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4033) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4033) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4033) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4033) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4043) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4043) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4053) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (4063) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (4113) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4113) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4113) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4123) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4133) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4133) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4183) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4183) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4183) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (4183) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4193) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (4193) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (4203) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (4293) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (4293) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (4293) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (5293) i2c.master: I2C software timeout[0m
+[0;33mW (5293) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (5453) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (5453) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (5453) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (7353) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (7353) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (7363) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (7363) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (7413) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (7413) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (7413) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (7413) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (7503) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (7993) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8033) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (8343) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (8343) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (8663) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (8703) i2cdev: [0x68 at 1] Retrying operation...[0m
+[1;31mE (9713) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;33mW (9713) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9713) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (9713) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (9803) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (9803) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (9803) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (14503) i2c.master: I2C software timeout[0m
+[0;33mW (14503) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (14543) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (14543) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (14543) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17033) i2c.master: I2C software timeout[0m
+[0;33mW (17033) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17073) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17073) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17073) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17343) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17383) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17383) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17463) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17463) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17623) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17623) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (17623) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (17673) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17713) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17713) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17713) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17713) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17723) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17723) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (17733) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (17823) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (17823) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17823) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (17833) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (17833) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (17833) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (17843) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18013) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18013) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18013) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18013) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18023) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18023) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18033) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (18043) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (18093) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18093) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18133) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18133) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18133) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18143) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18193) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18193) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18193) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18193) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18203) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18203) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18213) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18303) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18303) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18303) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18393) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18393) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18393) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18403) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18563) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18563) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18563) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18573) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18573) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18573) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18583) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (18593) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (18643) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18643) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18653) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18653) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18663) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18663) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18713) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18713) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18713) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18713) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18723) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18723) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18733) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (18823) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (18823) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18823) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[0;33mW (18873) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (18873) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (18873) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (18883) i2cdev: [0x68 at 1] I2C op failed (Try 2, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (19043) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (19043) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (19043) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (20043) i2c.master: I2C software timeout[0m
+[0;33mW (20043) i2cdev: [0x68 at 1] I2C op failed (Try 3, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[1;31mE (20043) i2cdev: [0x68 at 1] I2C operation failed after 4 retries. Last error: 264 (ESP_ERR_INVALID_RESPONSE)[0m
+[0;33mW (20093) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (20093) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (21093) i2c.master: I2C software timeout[0m
+[0;33mW (21093) i2cdev: [0x68 at 1] I2C op failed (Try 0, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (21133) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (21133) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (21133) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m
+[1;31mE (22133) i2c.master: I2C software timeout[0m
+[0;33mW (22133) i2cdev: [0x68 at 1] I2C op failed (Try 1, Handle 0x3ffb6598): 264 (ESP_ERR_INVALID_RESPONSE).[0m
+[0;33mW (22213) i2cdev: [0x68 at 1] Retrying operation...[0m
+[0;33mW (22213) i2c.common: GPIO 18 is not usable, maybe conflict with others[0m
+[0;33mW (22213) i2c.common: GPIO 19 is not usable, maybe conflict with others[0m

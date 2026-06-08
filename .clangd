@@ -1,0 +1,14 @@
+CompileFlags:
+  # 1. Point clangd to the directory containing compile_commands.json
+  CompilationDatabase: "build/"
+
+  # 2. Extract builtin system headers (like <stdint.h>) from the ESP-IDF compiler
+  QueryDriver:
+    - "**/xtensa-*-elf-gcc"
+    - "**/riscv32-esp-elf-gcc"
+    - "/opt/esp-idf/tools/**" # Optional: Adjust for Windows paths if needed
+
+  # 3. Strip GCC/Xtensa compiler flags that native Clang doesn't recognize
+  Remove: 
+    - "-m*"
+    - "-f*"
