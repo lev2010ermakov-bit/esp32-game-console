@@ -17,4 +17,6 @@ typedef struct{
 } Motion;
 
 void InitHardware(void);
+void InitDisplay(void);
+void InitGyro(void);
 Motion GetGyroData(void);
